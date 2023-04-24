@@ -31,18 +31,18 @@
     color: #facf0f;
 }
 
-#navbaritems {
+#navbar-items {
     width: 45%;
 }
 
-#navbaritems ul{
+#navbar-items ul{
     display: flex;
     justify-content: space-between;
     list-style: none;
     margin-top: 41px;
 }
 
-#navbaritems a{
+#navbar-items a{
     text-decoration: none;
     font-size: 1rem;
     color: #333;
@@ -53,9 +53,53 @@
     font-family: 'Source Sans Pro',sans-serif;
 }
 
-#navbaritems a:hover{
+#navbar-items a:hover{
     color: #facf0f;
 }
+
+#home{
+    width: 100%;
+    border: 1px solid white;
+    position: relative;
+   top: 100px;
+   color: black;
+   background: linear-gradient(to right,rgba(245,245,245,.8),rgba(245,245,245,.8)),url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
+   background-position: center;
+   height: 37rem;
+   min-height: 10rem;
+   max-height: 120rem;
+   text-align: center;
+   font-family: 'Source Sans Pro',sans-serif;
+   
+}
+
+#home p{
+   
+font-size: 25px;
+margin-top: 220px;
+
+}
+
+#home h2{
+   
+    font-size: 40px;
+    line-height: 1.5rem;
+    
+    }
+#home button{
+    background: #facf0f;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,.15);
+    transition: transform .3s;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    }    
 
 
 
