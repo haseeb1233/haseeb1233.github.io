@@ -1,7 +1,7 @@
-/* body{
+body{
     margin: 0;
     padding: 0;
-} */
+}
 
 #nav-menu{
     position: fixed;
@@ -99,7 +99,88 @@ margin-top: 220px;
     padding: 1rem 3rem;
     font-size: 1rem;
     border: none;
-    }    
+    }  
+    
+    /* home end */
 
+  #about{
+    position: relative;
+    top: 100px;
+    
+  } 
+  
+  #about-me{
+    text-align: center;
+    font-family:'Source Sans Pro',sans-serif ;
+    font-size: 25px;
+    text-decoration: underline;
+    text-decoration-color: #facf0f;
+    color: black;
 
+  }
+  #about-img{
+    width: 50%;
+  }
+
+  #about-img img{
+    width: 60%;
+    border-radius: 200px;
+    margin-left: 100px;
+    margin-top: 5px;
+  }
+
+  #about_content{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 300px;
+  }
+
+  #about-desc{
+    width: 70%;
+    font-size: 25px;
+    font-family:'Source Sans Pro',sans-serif ;
+    letter-spacing: 1px;
+    font-weight: 400;
+    transition: color .3s;
+    padding-top: 20px;
+  }
+
+  /* about over */
+
+  #Skills{
+    position: relative;
+    top: 200px;
+  }
+
+  #Skills h2{
+    text-align: center;
+    font-family:'Source Sans Pro',sans-serif ;
+    font-size: 2.3em;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: #facf0f;
+  }
+  #skills-details{
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-around;
+    gap: 10px;
+  }
+  .skills-container{
+    margin-left: 60px;
+    width: 50%;
+  }
+  .skills-container img{
+    width: 100%;
+  }
+  .skills-container p {
+    text-align: center;
+    font-size: 15px;
+    font-family:'Source Sans Pro',sans-serif ;
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
 
