@@ -166,21 +166,59 @@ margin-top: 220px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    justify-content: space-around;
-    gap: 10px;
+    justify-content: space-evenly;
+    gap: 15px;
+    
   }
   .skills-container{
     margin-left: 60px;
+    width: 40%;
+    
+  }
+  .skills-container:hover{
     width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
   .skills-container img{
     width: 100%;
   }
   .skills-container p {
     text-align: center;
-    font-size: 15px;
+    font-size: 10px;
     font-family:'Source Sans Pro',sans-serif ;
     letter-spacing: 1px;
     font-weight: 400;
   }
+  
+  /* skills over */
 
+  #projects{
+    position: relative;
+    top: 250px;
+  }
+
+  #projects h2{
+    text-align: center;
+    font-family:'Source Sans Pro',sans-serif ;
+    font-size: 2.3em;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: #facf0f;
+  }
+
+  #sub-project{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-evenly;
+    gap: 15px;
+  }
+  .project-card{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  .project-card img {
+    width: 100%;
+  }
