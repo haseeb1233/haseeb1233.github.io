@@ -86,7 +86,11 @@ margin-top: 220px;
     line-height: 1.5rem;
     
     }
-#home button{
+    #home li{
+      list-style-type: none;  
+    } 
+    
+#resume-button-2{
     background: #facf0f;
     color: #333;
     text-transform: uppercase;
@@ -100,6 +104,11 @@ margin-top: 220px;
     font-size: 1rem;
     border: none;
     }  
+
+    #resume-button-2 a{
+      text-decoration: none;
+      color: #333;
+    }
     
     /* home end */
 
@@ -355,7 +364,7 @@ margin-top: 220px;
 }
 .contact .contact-content .row i {
   font-size: 25px;
-  color: #92bcb5;
+  color: #111;
 }
 .contact .contact-content .info .head {
   font-weight: 500;
@@ -377,12 +386,12 @@ margin-top: 220px;
 .contact .right form .field,
 .contact .right form .fields .field {
   height: 45px;
-  width: 100%;
+  width: 95%;
   margin-bottom: 15px;
 }
 .contact .right form .textarea {
   height: 80px;
-  width: 100%;
+  width: 95%;
 }
 .contact .right form .name {
   margin-right: 10px;
@@ -390,7 +399,7 @@ margin-top: 220px;
 .contact .right form .field input,
 .contact .right form .textarea textarea {
   height: 100%;
-  width: 100%;
+  width: 90%;
   border: 1px solid lightgrey;
   border-radius: 6px;
   outline: none;
