@@ -56,7 +56,40 @@ body{
 #navbar-items a:hover{
     color: #facf0f;
 }
+#resnav {
+  display: none;
+}
 
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+  #nav-menu{
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  #navbar-items {
+     display:none;
+}
+#resnav {
+  display: block;
+}
+
+}
+
+@media screen and (min-width: 50px) and (max-width: 768px){
+  #navbar-items {
+     display:none;
+}
+#resnav {
+  display: block;
+  position: relative;
+  top:10px;
+}
+
+}
+
+
+/* nav end here */
 #home{
     width: 100%;
     border: 1px solid white;
@@ -72,6 +105,8 @@ body{
    font-family: 'Source Sans Pro',sans-serif;
    
 }
+
+
 
 #home p{
    
@@ -110,6 +145,9 @@ margin-top: 220px;
       color: #333;
     }
     
+
+
+  
     /* home end */
 
   #about{
@@ -155,11 +193,58 @@ margin-top: 220px;
     padding-top: 20px;
   }
 
+  @media screen and (min-width: 768px) and (max-width: 1024px){
+    #about_content {
+      display: flex;
+      flex-wrap: wrap;
+      width: 90%;
+      margin: auto;
+    
+  }
+
+  #about-desc{
+     margin: auto;
+    font-size: 20px;
+    width: 70%;
+  }
+  #about-img{
+    margin: auto;
+  }
+  #about-img img{
+    width: 60%;
+    border-radius: 200px;
+  /* margin-left: 275px; */
+  }
+  }
+
+  @media only screen and (max-width: 768px){
+    #about_content {
+      display: flex;
+      flex-wrap: wrap;
+      width: 90%;
+      margin: auto;
+    
+  }
+
+  #about-desc{
+     margin: auto;
+    font-size: 17px;
+    width: 70%;
+  }
+  #about-img{
+    margin: auto;
+  }
+  #about-img img{
+    width: 60%;
+    border-radius: 200px;
+  /* margin-left: 275px; */
+  }
+  }
   /* about over */
 
   #skills{
     position: relative;
-    top: 200px;
+    top: 250px;
   }
 
   #skills h2{
@@ -283,6 +368,48 @@ margin-top: 220px;
     font-size: .8rem;
     border: none;
   }
+
+
+  @media screen and (min-width: 768px) and (max-width: 1024px){
+  
+    #sub-project{
+      width: 90%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      justify-content: space-around;
+      gap: 10px;
+    }
+
+    .project-card{
+      width: 100%;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+  
+  }
+
+  @media only screen and (max-width: 768px) {
+  
+    #sub-project{
+      width: 100%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .project-card{
+      width: 100%;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+  
+  }
+
+
+
+
+
   /* project  over */
 
   
@@ -296,7 +423,7 @@ margin-top: 220px;
   width: 100%;
   margin: auto;
   background-color: #fff;
-  padding: 40px;
+  
 
 }
 
@@ -334,8 +461,175 @@ margin-top: 220px;
   margin-top: 15px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  
+  .github {
+   width: 95%;
+  }
 
-/* contact */
+  .github>div:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* width: 60%; */
+
+  }
+
+  .github>div:nth-child(2)>div {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+ 
+.github>div:nth-child(2)>div >img {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 10px;
+  margin-top: 25px;
+  /* border:2px solid red; */
+
+}
+
+.github>div:nth-child(2)>div >p> img {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 10px;
+  margin-top: 25px;
+  /* border:2px solid red; */
+
+}
+.github>div:nth-child(3)>div >img {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 10px;
+  margin-top: 25px;
+  /* border:2px solid red; */
+
+}
+
+#githubclaenders {
+  width: 100%;
+  /* display: grid; */
+  /* grid-template-columns: repeat(1, 1fr); */
+  column-gap: 10px;   
+  /* margin-top: 25px; */
+  /* border:2px solid red; */
+  /* padding-left:120px; */
+
+}
+
+#resclaender{
+  width: 100%;
+}
+  
+#githubclaenders {
+  width: 80%;
+  /* display: grid; */
+  /* grid-template-columns: repeat(1, 1fr); */
+  column-gap: 10px;
+  margin-top: 25px;
+  /* border:2px solid red; */
+  /* padding-left:120px; */
+
+}   
+
+}
+
+/* .calender{
+  width:100%;
+ 
+}
+  */
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .github {
+    width: 95%;
+  }
+
+  .github>div:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* width: 60%; */
+
+  }
+
+  .github>div:nth-child(2)>div {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+ 
+.github>div:nth-child(2)>div >img {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 10px;
+  margin-top: 25px;
+  /* border:2px solid red; */
+
+}
+
+.github>div:nth-child(2)>div >p> img {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 10px;
+  margin-top: 25px;
+  /* border:2px solid red; */
+
+}
+.github>div:nth-child(3)>div >img {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 10px;
+  margin-top: 25px;
+  /* border:2px solid red; */
+
+}
+
+#githubclaenders {
+  width: 100%;
+  /* display: grid; */
+  /* grid-template-columns: repeat(1, 1fr); */
+  column-gap: 10px;   
+  /* margin-top: 25px; */
+  /* border:2px solid red; */
+  /* padding-left:120px; */
+
+}
+#resclaender{
+  width: 100%;
+}
+  
+#githubclaenders {
+  width: 80%;
+  /* display: grid; */
+  /* grid-template-columns: repeat(1, 1fr); */
+  column-gap: 10px;
+  margin-top: 25px;
+  /* border:2px solid red; */
+  /* padding-left:120px; */
+
+}  
+}
+
+/* .calender{
+  width:100%;
+ 
+}
+  */
+ 
+
+
+
 #contact{
   position: relative;
   top: 300px;
@@ -450,4 +744,32 @@ margin-top: 220px;
     font-weight: 700;
     text-decoration: underline;
     text-decoration-color: #facf0f;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+  .max-width{
+    width: 100%;
+  }
+
+  .contact-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px){
+  .contact-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .contact .right form .fields {
+    flex-direction: column;
+  }
+  .contact .right form .name,
+  .contact .right form .email {
+    margin: 0;
+  }
 }
