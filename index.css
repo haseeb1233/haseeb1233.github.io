@@ -145,7 +145,36 @@ margin-top: 220px;
       color: #333;
     }
     
+    @media screen and (min-width: 768px) and (max-width: 1024px){
+      #home p{
+   
+        font-size: 20px;
+        margin-top: 200px;
+        
+        }
+        #home h2{
+   
+          font-size: 30px;
+          line-height: 1.5rem;
+          
+          }
+    }
 
+
+    @media screen and (max-width: 768px){
+      #home p{
+   
+        font-size: 15px;
+        margin-top: 200px;
+        
+        }
+        #home h2{
+   
+          font-size: 25px;
+          line-height: 1.5rem;
+          
+          }
+    }
 
   
     /* home end */
@@ -232,6 +261,7 @@ margin-top: 220px;
     width: 70%;
   }
   #about-img{
+    width: 70%;
     margin: auto;
   }
   #about-img img{
@@ -282,6 +312,28 @@ margin-top: 220px;
     font-family:'Source Sans Pro',sans-serif ;
     letter-spacing: 1px;
     font-weight: 400;
+  }
+
+
+  @media screen and (min-width: 768px) and (max-width: 1024px){
+    #skills-details{
+      width: 70%;
+      margin: auto;
+      grid-template-columns: repeat(3,1fr);
+      justify-content: space-evenly;
+      gap: 10px;
+      
+    }
+  }
+  @media screen and (max-width: 767px){
+    #skills-details{
+      width: 70%;
+      margin: auto;
+      grid-template-columns: repeat(2,1fr);
+      justify-content: space-evenly;
+      gap: 10px;
+      
+    }
   }
   
   /* skills over */
