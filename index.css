@@ -56,11 +56,15 @@ body{
 #navbar-items a:hover{
     color: #facf0f;
 }
+#resnav {
+  display: none;
+}
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
 
+
   #navbarname{
-    font-size: .95rem;
+    font-size: 1rem;
     width: 40%;
   }
 
@@ -69,8 +73,17 @@ body{
     width: 100%;
   }
 
- 
-
+  #navbar-items {
+     display:none;
+}
+#resnav {
+  display: block;
+  width: 30%;
+}
+#humberger{
+  margin-left: 80%;
+   margin-top: 30px
+}
 #navbar-items-res{
   display: none;
   width: 60%;
@@ -103,16 +116,25 @@ body{
 
 @media screen and (min-width: 360px) and (max-width: 768px){
   #navbarname{
-    font-size: .6rem;
-    width: 40%;
+    font-size: .9rem;
+    width: 50%;
   }
 
   #nav-menu{
-   
     width: 100%;
   }
 
-
+  #navbar-items {
+     display:none;
+}
+#resnav {
+  display: block;
+  width: 30%;
+}
+#humberger{
+  margin-left: 80%;
+   margin-top: 30px
+}
 #navbar-items-res{
   display: none;
   width: 85%;
@@ -145,15 +167,25 @@ body{
 
 @media screen and (max-width: 360px){
   #navbarname{
-    font-size: .4rem;
-    width: 40%;
+    font-size: .7rem;
+    width: 60%;
   }
 
   #nav-menu{
     width: 100%;
   }
 
-
+  #navbar-items {
+     display:none;
+}
+#resnav {
+  display: block;
+  width: 50%;
+}
+#humberger{
+  margin-left: 80%;
+   margin-top: 30px
+}
 #navbar-items-res{
   display: none;
   width: 85%;
@@ -188,6 +220,7 @@ body{
 
 /* nav end here */
 #home{
+  padding-top: 50px;
     width: 100%;
     border: 1px solid white;
     position: relative;
@@ -292,7 +325,8 @@ margin-top: 220px;
 
   #about{
     position: relative;
-    top: 100px;
+    top: 20px;
+    padding-top: 100px;
     
   } 
   
@@ -313,14 +347,14 @@ margin-top: 220px;
     width: 60%;
     border-radius: 200px;
     margin-left: 100px;
-    margin-top: 5px;
+    margin-top: 20px;
   }
 
   #about_content{
     display: flex;
     width: 90%;
     margin: auto;
-    height: 300px;
+    
   }
 
   #about-desc{
@@ -334,11 +368,12 @@ margin-top: 220px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1024px){
+    
     #about_content {
       display: flex;
       flex-wrap: wrap;
-      width: 90%;
-      margin: auto;
+      width: 100%;
+    
     
   }
 
@@ -353,6 +388,8 @@ margin-top: 220px;
   #about-img img{
     width: 60%;
     border-radius: 200px;
+    margin: auto;
+    margin-left: 25%;
   /* margin-left: 275px; */
   }
   }
@@ -376,8 +413,10 @@ margin-top: 220px;
     margin: auto;
   }
   #about-img img{
-    width: 60%;
+    width: 50%;
     border-radius: 200px;
+    margin: auto;
+    margin-left: 28%;
   /* margin-left: 275px; */
   }
   }
@@ -385,7 +424,9 @@ margin-top: 220px;
 
   #skills{
     position: relative;
-    top: 250px;
+    top: 20px;
+    padding-top: 100px;
+    margin-bottom: 20px;
   }
 
   #skills h2{
@@ -397,6 +438,7 @@ margin-top: 220px;
     text-decoration-color: #facf0f;
   }
   #skills-details{
+    padding-top: 30px;
     width: 70%;
     margin: auto;
     display: grid;
@@ -451,8 +493,9 @@ margin-top: 220px;
 
   #projects{
     position: relative;
-    top: 250px;
-    background: linear-gradient(to right,rgba(245,245,245,.8),rgba(245,245,245,.8)),url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);;
+    top: 20px;
+    background: linear-gradient(to right,rgba(245,245,245,.8),rgba(245,245,245,.8)),url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
+    padding-top: 80px;
   }
 
   #projects h2{
@@ -796,6 +839,7 @@ margin-top: 220px;
 #contact{
   position: relative;
   top: 300px;
+  padding-bottom: 135px;
 }
 .contact .contact-content .column {
   width: calc(50% - 30px);
