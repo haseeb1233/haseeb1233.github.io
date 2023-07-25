@@ -56,9 +56,6 @@ body{
 #navbar-items a:hover{
     color: #facf0f;
 }
-#resnav {
-  display: none;
-}
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
 
@@ -72,13 +69,8 @@ body{
     width: 100%;
   }
 
-  #navbar-items {
-     display:none;
-}
-#resnav {
-  display: block;
-  width: 30%;
-}
+ 
+
 #navbar-items-res{
   display: none;
   width: 60%;
@@ -120,13 +112,7 @@ body{
     width: 100%;
   }
 
-  #navbar-items {
-     display:none;
-}
-#resnav {
-  display: block;
-  width: 30%;
-}
+
 #navbar-items-res{
   display: none;
   width: 85%;
@@ -167,13 +153,7 @@ body{
     width: 100%;
   }
 
-  #navbar-items {
-     display:none;
-}
-#resnav {
-  display: block;
-  width: 50%;
-}
+
 #navbar-items-res{
   display: none;
   width: 85%;
