@@ -30,7 +30,26 @@
 </li>
       </ul>
     </div>
-  
+   
+    <div id="resnav">
+      <i id="humberger" class="fa fa-bars" style="font-size:25px ; margin-left: 80%; margin-top: 20px;"></i>
+      <div id="navbar-items-res">
+        <i id="closebutton" class="fa fa-close" style="font-size:20px; margin-left: 85%;"></i>
+        <ul>
+          <li><a href="#home" class="nav-link home">Home</a></li>
+        <li><a href="#about" class="nav-link about">About</a></li>
+        <li><a href="#skills" class="nav-link skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link projects">Projects</a></li>
+        <li><a href="#contact" class="nav-link contact">Contact</a></li>
+        <li> <button onclick="resume()" style="border:none; background-color: white;" id="resume-button-1">
+          <a href="./Abdul-Haseeb-tk-Resume.pdf" target="_blank" class="nav-link resume" id="resume-link-1"
+              download>Resume</a>
+      </button>
+  </li>
+        </ul>
+      </div>
+
+    </div>
     </nav>
     <!-- navbar ends here -->
      
@@ -54,7 +73,7 @@
           </div>
           <div id="about-desc">
             <h2 class="about section">Hey, I'm Abdul Haseeb tk</h2>
-             <p class="about section" id="user-detail-intro">Dedicated Node Js backend developer who is always Passionate about implementing and launching new projects and ability to perform well in collaboration. Looking forward to developing products that help in making peopleʼs lives better</p>
+             <p class="about section" id="user-detail-intro">Dedicated Node.js backend developer with a strong passion for implementing and launching innovative projects. Proficient in collaborative environments and skilled in utilizing Node.js, Express.js, and MongoDB to develop cutting-edge products that enhance people's lives. Excited about exploring the endless possibilities that technology offers and committed to creating solutions that make a positive impact. Always eager to stay up-to-date with the latest trends in web development and continuously seeking opportunities to expand knowledge in the ever-evolving tech world.</p>
           </div>
         </div>
        </div>
@@ -284,7 +303,18 @@ function resume() {
 
 
 
-  
+    let humberger = document.getElementById("humberger") 
+    humberger.addEventListener("click",(e)=>{
+      console.log(document.getElementById("navbar-items-res").style.display)
+     if( document.getElementById("navbar-items-res").style.display==="" ||document.getElementById("navbar-items-res").style.display==="none" ){
+      document.getElementById("navbar-items-res").style.display="block"
+      console.log(document.getElementById("navbar-items-res").style.display)
+     }else if(document.getElementById("navbar-items-res").style.display=="block"){
+      document.getElementById("navbar-items-res").style.display="none"
+     }
+        
+
+    }) 
     
     let navbarres = document.getElementById("navbar-items-res")
     navbarres.addEventListener("click",(e)=>{
