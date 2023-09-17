@@ -535,6 +535,8 @@ margin-top: 220px;
   .project-description{
     font-family:'Source Sans Pro',sans-serif ;
     font-weight: 400;
+    height: 100px;
+   
   }
   .project-tech-stack{
     font-family:'Source Sans Pro',sans-serif
